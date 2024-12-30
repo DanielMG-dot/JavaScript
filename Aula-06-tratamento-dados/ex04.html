@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números e Strings</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color:aliceblue;
+            font: 20pt normal Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+    <p>Livre de maldições!</p>
+
+    <script>
+        var n1 = Number(window.prompt("Escolha um número"));
+        var n2 = Number(window.prompt("Escolha outro número"));
+        var soma = n1 + n2;
+        window.alert("A soma desses números é igual a " + soma);
+
+        /* Conversão de strings em números:
+            Number.parseInt() -> Números inteiros
+            Number.parseFloat() -> Números reais
+            Number() -> O JavaScript escolhe
+            */
+
+        var string1 = String(n1);
+        var string2 = n2.toString();
+        var soma2 = string1 + string2;
+        window.alert("Ou a soma pode ser " + soma2);
+
+        // Conversão de número para string
+
+        // Formatar strings com placeholder:
+
+        window.alert(`Só para confirmar, a soma é ${soma} mesmo`);
+
+        /* Outras formatações:
+            var.length -> quantos caracteres 
+            var.toUpperCase() -> letras maiúsculas
+            var.toLowerCase() -> letras minúsculas        
+        */
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+Operadores aritméticos e sua ordem de precedência:
+ 
+    () -> 1º
+    Potenciação: 5 ** 2 = 25 -> 2º
+    Multiplicação: 5 * 2 = 10 -> 3º
+    Divisão: 5 / 2 = 2.5 -> 3º
+    Divisão inteira: 5 % 2 = 1 -> 3º
+    Adição: 5 + 2 = 7 -> 4º
+    Subtração: 5 - 2 = 3 -> 4º
+
+Operadores de atribuição: são as variáveis
+
+    var soma = 5 + 2
+    var diferença = soma - 2
+    etc
+
+Auto-atribuição:
+
+    var n = 3
+    n = n + 4 (7)
+    n = n * 5 (35)
+
+    ou 
+
+    var n = 3
+    n+=4 (7)
+    n-=5 (2)
+
+Incremento:
+
+    var x = 4
+    x+=1 (5) ou x++ (5)
+    x-=1 (4) ou x-- (4)
+

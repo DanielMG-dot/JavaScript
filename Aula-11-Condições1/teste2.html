@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfândega</title>
+</head>
+<body>
+    <h1>Alfândega </h1>
+    Escreva de qual país você é: <input type="text" id="pais">
+    <input type="button" value="Escanear" onclick="scan()">
+    <div id="res"></div>
+
+    <script>
+        var res = document.querySelector("div#res");
+        var pais = document.querySelector("input#pais");
+        function scan() {
+            res.innerHTML = "<p>Seja bem-vindo(a)!</p>"
+            if (pais.value == "Brasil") {
+                res.innerHTML += "<p>Você é <strong>Brasileiro</strong>(a)!</p>"
+            } else {
+                res.innerHTML += "<p>Você é <strong>estrangeiro(a)</strong>!</p>"
+            }
+        }
+    </script>
+</body>
+</html>

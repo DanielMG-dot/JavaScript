@@ -1,0 +1,10 @@
+Para acessar o terminal do node no VSCode:
+    1 - Clique em "...", ao lado de "Acessar";
+    2 - Clique em "Terminal";
+    3 - Clique em "Novo Terminal".
+
+Para usar o terminal do node:
+    1 - No prompt do terminal criado, digite "node";
+    2 - Digite seus códigos (var e seus valores, typeof, funções, etc); 
+    3 - Ao terminar, digite ".exit";
+    4 - No prompt, digite "exit".

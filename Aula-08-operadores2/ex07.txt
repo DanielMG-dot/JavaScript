@@ -1,0 +1,35 @@
+Operadores relacionais:
+
+    Maior: >
+    Menor: <
+    Maior ou igual:>=
+    Menor ou igual: <=
+    Igual: ==
+    Negação: !=
+
+    Todas as expressões com esses operadores têm como resultado um valor booleano (true ou false)
+
+Operadores relacionais e identidades:
+
+    5 == '5' -> True (valores de mesma grandeza)
+    5 === '5'-> False (Número != String)
+
+Operadores lógicos:
+
+    Negação: !
+    Conjunção: && ("e")
+    Disjunção: || ("ou")
+
+Ordem de Precedência dos Operadores:
+
+    Aritméticos (1º)
+    Relacionais (2º)
+    Negação (3º)
+    Conjunção (4º)
+    Disjunção (5º)
+
+Operador Ternário:
+
+    teste ? true : false
+
+    média >= 7 ?"Aprovado":"Reprovado"

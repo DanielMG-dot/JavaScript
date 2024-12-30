@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            font: arial 20pt normal;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+
+    <h2>O que é DOM?</h2>
+        <p>DOM significa Document Object Model</p>
+
+        <p>É o conjunto de de objetos dentro do navegador que dá acesso aos componentes internos do Website</p>
+
+        <p>Para trabalhar com o DOM, é necessário conhecer a árvore DOM do site, segue um exemplo:</p>
+
+        <img src="Captura de tela 2024-12-10 161521.png" alt="árvore dom" height="300pt" width="175pt">
+
+
+    <h2>Get elements by Tag name</h2>
+        <p>Este é um parágrafo teste</p>
+
+        <p>Este é outro parágrafo teste</p>
+
+        <p>Elementos com mesma tag são identificados com números, começando pelo 0</p>
+
+    <h2>Get elements by ID e by Class Name</h2>
+        <p>Seguindo a mesma lógica, os elementos serão identificados pelo seu id (um elemento) ou pela sua classe (mais de um elemento)</p>
+
+        <p class="teste">Este é um parágrafo de teste</p>
+
+        <p>Ele possui a classe "teste"</p>
+
+        <div id="prim">Esta é uma div, seu id é "primeiro"</div>
+
+        <p>Também é possível configurar elementos pelo seu nome ("byName")</p>
+
+    <h2>Query Selector</h2>
+
+        <p>Um jeito mais moderno de trabalhar com o DOM é com o comando "document.querySelector()" ou "document.querySelectorAll()" </p>
+
+        <p>Para selecionar os elementos pelo id: document.querySelector(div#prim)</p>
+
+        <p>Para selecionar os elementos pela classe: document.querySelector(p.teste)</p>
+
+
+    <script>
+        var par = Number(prompt("escolha a posição do parágrafo"));
+        var p = document.getElementsByTagName("p")[par];
+        document.write("Você escolheu o seguinte parágrafo: " + p.innerText);
+
+        var d = document.getElementById("prim");
+        d.style.background = "green";
+
+        /*var t = document.getElementsByClassName("teste");
+        t.style.background = "pink";*/
+    </script>
+</body>
+</html>

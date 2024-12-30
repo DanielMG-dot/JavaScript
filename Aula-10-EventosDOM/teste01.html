@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Exercitando o DOM</h1>
+    <h2>Passe o mouse em cima</h2>
+    <p>Esse fica azul</p>
+    <p>Esse fica verde</p>
+    <p>Esse fica vermelho</p>
+
+    <h2>Mude as cores</h2>
+    <input type="text" placeholder="escolha a cor (inglês)" id="txtcor">
+    <input type="button" value="Mudar" onclick="mudar()">
+
+    <h2>Conteúdo de parágrafo</h2>
+    <p>Pássaros são bonitos</p>
+    <p>Gatos são fofos</p>
+    <p>Cachorros são carinhosos</p>
+    <div id="res"></div>
+
+    <input type="number" placeholder="escolha a posição do parágrafo (0-5)" id="numero">
+    <input type="button" value="Escolher" onclick="parag()">
+
+    <script>
+        var p1 = document.getElementsByTagName("P")[0]
+        var p2 = document.getElementsByTagName("P")[1]
+        var p3 = document.getElementsByTagName("p")[2]
+
+        p1.addEventListener("mouseenter", entrar1);
+        p2.addEventListener("mouseenter", entrar2);
+        p3.addEventListener("mouseenter", entrar3);
+
+        p1.addEventListener("mouseout", sair);
+        p2.addEventListener("mouseout", sair);
+        p3.addEventListener("mouseout", sair);
+
+        function entrar1() {
+            p1.style.background = "blue";
+            p1.style.color = "white";
+        }
+            
+        function entrar2() {
+            p2.style.background = "green";
+            p2.style.color = "white";
+        }
+        
+        function entrar3() {
+            p3.style.background = "red";
+            p3.style.color = "white";
+        }
+            
+        function sair() {
+            p1.style.background = "white";
+            p1.style.color = "black";
+            p2.style.background = "white";
+            p2.style.color = "black";
+            p3.style.background = "white";
+            p3.style.color = "black";
+        }
+
+            var cor = document.querySelector("input#txtcor")
+        
+            function mudar() {
+            document.body.style.background = cor.value;
+            }
+
+            
+            
+
+            function parag() {
+                var res = document.getElementById("res");
+                var p4 = document.getElementsByTagName("P")[3];
+                var p5 = document.getElementsByTagName("P")[4];
+                var p6 = document.getElementsByTagName("p")[5];
+                var num = document.getElementById("numero");
+                var pn = Number(num.value);
+                var par = getElementsByTagName("p")[pn];
+                res.innerHTML = `Você escolheu o seguinte parágrafo: ${par}`
+            }
+        
+
+        
+    
+
+    </script>
+</body>
+</html>
